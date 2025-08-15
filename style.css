@@ -1,0 +1,153 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    flex-direction: column; /* 요소를 세로로 정렬 */
+    justify-content: flex-start; /* 요소를 상단에 배치 */
+    align-items: center; /* 요소를 가로 중앙에 배치 */
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.top-ad {
+    width: 90%;
+    max-width: 500px;
+    background-color: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+#todo-input {
+    flex-grow: 1;
+    padding: 12px 18px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#todo-input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+#add-button {
+    padding: 12px 25px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+#add-button:hover {
+    background-color: #0056b3;
+}
+
+#todo-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+#todo-list li {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-left: 4px solid transparent;
+}
+
+#todo-list li:hover {
+    background-color: #e9ecef;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #adb5bd;
+    border-color: #28a745;
+    background-color: #e9f5f1;
+}
+
+.completed:hover {
+    background-color: #d8e5e1;
+}
+
+/* 편집 모드일 때 텍스트를 구분하기 위한 스타일 */
+li.editing {
+    background-color: #fff3cd; /* 편집 모드 배경색 */
+    border-color: #ffc107;
+}
+
+.edit-button {
+    background-color: #ffc107;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+    flex-shrink: 0;
+}
+
+.edit-button:hover {
+    background-color: #e0a800;
+}
+
+.tutorial {
+    font-style: italic;
+    color: #868e96;
+    background-color: transparent !important;
+    border-left: none !important;
+    cursor: default !important;
+}
+
+.tutorial:hover {
+    background-color: transparent !important;
+}
